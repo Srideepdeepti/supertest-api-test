@@ -7,7 +7,7 @@
   "scripts": {
     "test": "mocha",
     "test-html": "mocha --reporter mochawesome",
-    "test-junit": "mocha --reporter mocha-junit-reporter"
+    "test-junit": "mocha --reporter mocha-junit-reporter --reporter-options mochaFile=./test-results.xml"
   },
   "keywords": [],
   "author": "",
