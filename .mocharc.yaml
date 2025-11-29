@@ -1,5 +1,5 @@
 require: '@babel/register'
 reporter: mocha-junit-reporter
 reporterOptions:
-  mochaFile: ./results.xml
+  mochaFile: ./test-results.xml
 
