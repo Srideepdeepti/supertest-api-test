@@ -30,7 +30,7 @@ describe('User Posts', () => {
             .set('Authorization', `Bearer ${user_token}`)
             .send(data);
 
-            console.log("Response in /posts :=====",res)
+            //console.log("Response in /posts :=====",res)
 
         expect(res.body).to.have.property('id');
         expect(res.body).to.have.property('user_id');
@@ -89,7 +89,7 @@ it('422 Validation Failed',async()=>{
             .set('Authorization', `Bearer ${user_token}`)
             .send(data)
             .expect(422)
-        console.log(res.body)
+        //console.log(res.body)
         expect(res.body[0].message).to.eq("can't be blank")
         expect(res.body[1].message).to.eq("can't be blank")
         expect(res.body[0].field).to.eq("title")
