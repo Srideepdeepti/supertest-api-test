@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "test-html":"mocha --reporter mochawesome"
+    "test-html": "mocha --reporter mochawesome",
+    "test-junit" :"mocha  --reporter mocha-junit-reporter"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +20,7 @@
     "@babel/register": "^7.28.3",
     "chai": "^6.2.1",
     "mocha": "^11.7.5",
+    "mocha-junit-reporter": "^2.2.1",
     "mochawesome": "^7.1.4",
     "supertest": "^7.1.4"
   },
